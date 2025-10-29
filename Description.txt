@@ -1,0 +1,26 @@
+SIGCPEF (Sistema de Integracion para la Gestión del Cuerpo Policial del Estado Falcón)
+
+Este sistema cuenta con un header donde ilustra el logotipo del cuerpo policial, las siglas SIGCPEF y
+el link de las secciones de la pagina.
+
+en el section se mostrará el "inicio" de la pagina.
+el footer tendrá una descripcion "2025 Derechos reservados - Comisario Yefir Rivero.".
+
+seccion de RR-HH (recursos humanos) se podrá agregar datos.
+en ésta sección tendra un boton y ventana emergente para agregar:
+Nombre, Apellido, C.I. (Cedula de identidad), fecha de nacimiento, fecha de ingreso a la institución, 
+rango, cargo/division y foto de identificación. Como vista simple del listado del cuerpo policial. 
+debe tener un buscador que identifique el nombre, apellido o numero de cedula.
+
+en un boton arrojará una ventana emergente con todos los datos del funcinario que el RR-HH
+quiera describir del funcionario, para que no se sobre cargue la vista simple de listado, el RR-HH tendra
+la libertad de elegir cuantos input de descripcion puede agregar para la descripcion del funcionario.
+
+seccion de OPERACIONES será una descripción "simple" del cuerpo policial + division/departamento.
+debe tener un buscador que identifique el nombre, apellido o numero de cedula.
+
+seccion de ICAP se podrá realizar las diferentes sanciones a los funcionarios, será buscado 
+por el numero de cedula, y quedará registrado con la fecha y hora correspondiente actual.
+debe tener un buscador que identifique el nombre, apellido o numero de cedula
+
+secciones de la seccion ICAP: llamado de atencion, asistencia involuntario y asistencia obligatoria.
