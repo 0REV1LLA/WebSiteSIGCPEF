@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+
+*  {
+    font-family: "Dosis", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--white-color);
+}
+
+:root {
+    --white-color: #fff;
+    --text-color: #79787a;
+    --primary-color: #0056b3;
+    --primary-text-color: #888;
+    --hover-color: #eee;
+    --bg1-color: #0b3271;
+    --bg2-color: #13671e;
+}
+
+body {
+    background-image: url(img/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 100vh;
+}
+
+.header-logo img{
+    margin-left: 15px;
+    width: 45px;
+    height: 45px;
+}
+
+header {
+    width: 100%;
+    position: absolute;
+    
+    padding: 5px 10px 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: linear-gradient(176deg, rgb(0, 128, 0), rgba(0, 0, 139, 0.871));
+    border-radius: 0 0 40px 40px;
+
+    z-index: 1;
+}
+
+.header-logo {
+    width: 50%;
+
+    display: flex;
+    justify-content: left;
+}
+
+.header-tittle {
+    padding-top: 5px;
+    padding-left: 15px;
+}
+
+.header-links a {
+    font-size: 18px;
+
+    margin-right: 60px;
+
+    color: rgb(181, 181, 181);
+
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.header-links i {
+    color: rgb(181, 181, 181);
+    padding-right: 5px;
+    
+    transition: color 0.3s ease;
+}
+
+.header-links a:hover {
+    color: var(--white-color);
+}
+
+.header-links a:hover i {
+    color: var(--white-color);
+}
+
+.section-begin {
+    position: absolute;
+    height: 80%;
+    width: 100%;
+
+    justify-content: center;
+    text-align: center;
+}
+
+.section-begin h2 {
+    margin-top: 140px;
+}
+
+p {
+    margin-top: 15px;
+}
+
+footer {
+    position: absolute;
+    
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-bottom: 10px;
+    
+    background: rgba(0, 128, 0, 0.379);
+
+    border-radius: 25px 25px 5px 5px;
+}

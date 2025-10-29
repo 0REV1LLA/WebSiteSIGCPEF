@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+
+*  {
+    font-family: "Dosis", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white-color: #fff;
+    --text-color: #79787a;
+    --primary-color: #0056b3;
+    --primary-text-color: #888;
+    --hover-color: #eee;
+    --bg1-color: #0b3271;
+    --bg2-color: #167723;
+}
+
+body {
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url(img/fondoLogin.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    position: relative;
+
+    width: 650px;
+    height: 500px;
+    margin: 30px;
+
+    background: white;
+    
+
+    overflow: hidden;
+    border-radius: 30px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.form-box {
+    position: absolute;
+
+    width: 50%;
+    height: 100%;
+
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    color: var(--text-color);
+}
+
+.form-box.login {
+    left: 0;
+}
+.form-box.register {
+    right: 0;
+}
+
+form {
+ width: 100%;
+}
+
+.form-box h2 {
+    font-size: 36px;
+    text-decoration: underline;
+}
+
+
+.input-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:  30px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 35px;
+
+    background: var(--hover-color);
+
+    border-radius: 8px;
+    border: 5px solid transparent;
+
+    outline: none;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    color: var(--text-color);
+
+    transition: all 0.3s ease;
+}
+
+.input-box input::placeholder {
+    color: var(--primary-text-color);
+    font-weight: 400;
+}
+
+.input-box input i {
+    position: relative;
+
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+
+    color: var(--primary-text-color);
+    
+    transition: all 0.3s ease;
+}
+
+.input-box input:hover,
+.input-box input:focus {
+    border: 2px solid var(--text-color)
+}
+
+.input-box .bx {
+    width: 30px;
+    font-size: 25px;
+}
+
+.forgot-link a {
+    font-size: 14px;
+
+    text-decoration: none;
+    color: var(--text-color);
+
+    transition: all 0.3s ease;
+}
+
+.forgot-link a:hover {
+    color: var(--bg2-color);
+}
+
+.btn {
+    width: 100%;
+    height: 35px;
+    margin: 10px 0;
+
+    background: var(--bg2-color);
+
+    border-radius: 8px;
+    border: none;
+
+    cursor: pointer;
+
+    font-size: 16px;
+    color: var(--white-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 15px;
+
+    transition: all 0.3s ease;
+}
+
+.btn span {
+    display: block;
+}
+
+.btn i {
+    transform: translateX(-40px);
+
+    opacity: 0;
+    font-size: 0;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    font-size: 20px;
+    transform: scale(0.95);
+    box-shadow: 0 5px 10px rgb(0, 0, 0, 0.4);
+}
+
+.btn:hover i {
+    font-size: 25px;
+    opacity: 1;
+    transform: translateX(10px);
+}
+
+p {
+    margin-bottom: 8px;
+}
+
+.social-icons a {
+    display: inline-flex;
+
+    padding: 10px;
+
+    border: 2px solid #ccc;
+    border-radius: 8px;
+
+    font-size: 24px;
+    text-decoration: none;
+    color: var(--text-color);
+
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+}
+
+.toggle-box {
+    position: absolute;
+
+    border: 2px solid;
+
+    height: 100%;
+    width: 200%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(135deg, var(--bg2-color), var(--bg1-color));
+
+    border-radius: 300px;
+
+    left: 150%;
+
+    transform: translateX(-50%);
+
+    z-index: 2;
+}
+
+.toggle-panel {
+    position: absolute;
+
+    width: 25%;
+    height: 100%;
+
+    color: var(--white-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    z-index: 2;
+    transition: all .6s ease-in-out;
+}
+
+.toggle-panel.left {
+    left: 0;
+}
+
+.toggle-panel.right {
+    right: 0;
+}
+
+.toggle-panel p {
+    margin: 20px;
+}
+
+.toggle-panel .btn {
+    width: 160px;
+    background: transparent;
+    border: 2px solid var(--white-color);
+    box-shadow: none;
+}
+
+.form-box.login {
+    opacity: 1;
+    left: 0;
+}
+
+.form-box.register {
+    opacity: 0;
+    right: -50%;
+}
+
+.toggle-panel {
+    transition: all 0.6s;
+    transition-delay: 1.4s;
+}
+
+.toggle-panel.left {
+    opacity: 1;
+}
+
+.toggle-panel.right {
+    opacity: 0;
+}
+
+.container.active .register {
+    opacity: 1;
+    right: 0;
+}
+
+.container.active .login {
+    opacity: 0;
+    left: -50%;
+}
+
+.form-box {
+    transition: all .6s;
+    transition-delay: 1.6s;
+}
+
+.container.active .toggle-panel.left {
+    opacity: 0;
+}
+
+.container.active .toggle-panel.right {
+    opacity: 1;
+}
+
+.container.active .toggle-box {
+    left: -50%;
+}
+
+.toggle-box {
+    transition: all 1.2s;
+    transition-delay: .6s;
+}
+
+.login h2 {
+    color: var(--bg2-color);
+}
+
+.register h2 {
+    color: var(--bg1-color);
+}
+
+.login .input-box input:hover,
+.login .input-box input:focus {
+    border: 2px solid var(--bg2-color);
+}
+
+.login .input-box input:hover + i,
+.login .input-box input:focus  + i{
+    color: var(--bg2-color);
+}
+
+.register .input-box input:hover,
+.register .input-box input:focus {
+    border: 2px solid var(--bg1-color);
+}
+
+.register .input-box input:hover + i,
+.register .input-box input:focus  + i{
+    color: var(--bg1-color);
+}
+
+.form-box.register .btn {
+    background: var(--bg1-color);
+}
+
+.form-box.login .social-icons a:hover {
+    color: var(--bg2-color);
+    box-shadow: 0 5px 10px var(--bg2-color);
+}
+
+.form-box.register .social-icons a:hover {
+    color: var(--bg1-color);
+    box-shadow: 0 5px 10px var(--bg1-color);
+}
+
+
+
+
+
+@media screen and (max-width: 650px) {
+    .container {
+        height: calc(100vh - 40px);
+        margin: 10px;
+    }
+    .form-box {
+        width: 100%;
+        height: 125%;
+    }
+    .form-box .register {
+        right: -100%;
+    }
+    .form-box .login {
+        bottom: 0;
+    }
+    .form-box {
+        transition: all 1.4s ease-in-out .2s;
+    }
+    .toggle-panel {
+        transition: all .9s ease 1.8s;
+    }
+    .toggle-box {
+        width: 100%;
+        height: 200%;
+        left: 50%;
+        top: -170%;
+        border-radius: 20vw;
+        background: linear-gradient(135deg, var(--bg1-color), var(--bg2-color));
+    }
+    .container.active .toggle-box {
+        left: 50%;
+        top: 70%;
+    }
+    .toggle-panel {
+        width: 100%;
+        height: fit-content;
+        left: 50% !important;
+        transform: translateX(-50%);
+    }
+    .toggle-panel.left {
+        top: 20px;
+        opacity: 0;
+    }
+    .toggle-panel.right {
+        bottom: 10px;
+        opacity: 1;
+    }
+    .container.active .toggle-panel.left {
+        opacity: 1;
+    }
+}

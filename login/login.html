@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styleLogin.css">
+    <link rel="icon" href="img/logotipo.png">
+</head>
+<body>
+    <div class="container">
+        <div class="form-box login">
+            <form action="">
+                <h2>Iniciar sesión</h2>
+                <div class="input-box">
+                    <input type="text" placeholder="Usuario" required>
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Contraseña" required>
+                    <i class='bx bxs-lock' ></i>
+                </div>
+                <div class="forgot-link">
+                    <a href="#">¿ Se te olvidó la contraseña ?</a>
+                </div>
+                <br><button type="submit" class="btn">
+                    <span>INICIAR</span>
+                    <i class='bx bxs-send' ></i>
+                </button>
+                <p>
+                    Iniciar sesión con Gmail
+                </p>
+                <div class="social-icons">
+                    <a href="#"><i class='bx bxl-gmail'></i></i></a>
+                </div>
+            </form>
+        </div>
+
+
+        <div class="form-box register">
+            <form action="">
+                <h2>Registrarse</h2>
+                <div class="input-box">
+                    <input type="text" placeholder="Usuario" required>
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-box">
+                    <input type="email" placeholder="Correo electronico" required>
+                    <i class='bx bxs-envelope' ></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Contraseña" required>
+                    <i class='bx bxs-lock' ></i>
+                </div>
+                <br><button type="submit" class="btn">
+                    <span>REGISTRAR</span>
+                    <i class='bx bxs-send' ></i>
+                </button>
+                <p>
+                    Registrarse con Gmail
+                </p>
+                <div class="social-icons">
+                    <a href="#"><i class='bx bxl-gmail'></i></i></a>
+                </div>
+            </form>
+        </div>
+
+        <div class="toggle-box">
+            <div class="toggle-panel left">
+                <h2>Hola, bienvenid@ !</h2>
+                <p>¿ No tienes una cuenta ?</p>
+                <button type="button" class="btn register-btn change-form">
+                    Registrarse
+                </button>
+            </div>
+            <div class="toggle-panel right">
+                <h2>Bienvenid@ de vuelta !</h2>
+                <p>¿ Ya tienes una cuenta ?</p>
+                <button type="button" class="btn login-btn change-form">
+                    Iniciar sesión
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="scriptLogin.js"></script>
+</body>
+</html>
