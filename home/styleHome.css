@@ -19,7 +19,7 @@
 }
 
 body {
-    background-image: url(img/fondo.jpg);
+    background-image: url(/img/fondo.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -42,7 +42,7 @@ header {
     justify-content: space-between;
     align-items: center;
 
-    background: linear-gradient(176deg, rgb(0, 128, 0), rgba(0, 0, 139, 0.871));
+    background-color: rgba(0, 0, 124, 0.801);
     border-radius: 0 0 40px 40px;
 
     z-index: 1;
@@ -116,7 +116,7 @@ footer {
 
     padding-bottom: 10px;
     
-    background: rgba(0, 128, 0, 0.379);
+    background-color: rgba(0, 0, 124, 0.801);
 
     border-radius: 25px 25px 5px 5px;
 }
