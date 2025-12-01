@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 *  {
-    font-family: "Dosis", sans-serif;
+    font-family: oswald, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -24,7 +23,7 @@ body {
     align-items: center;
     justify-content: center;
 
-    background-image: url(/img/fondoLogin.png);
+    background-image: url(https://i.postimg.cc/Bn296fHw/fondo-Login.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

@@ -1,122 +1,144 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
-*  {
-    font-family: "Dosis", sans-serif;
+html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    color: var(--white-color);
+    font-family: 'Oswald', sans-serif;
 }
 
-:root {
-    --white-color: #fff;
-    --text-color: #79787a;
-    --primary-color: #0056b3;
-    --primary-text-color: #888;
-    --hover-color: #eee;
-    --bg1-color: #0b3271;
-    --bg2-color: #13671e;
-}
-
-body {
-    background-image: url(/img/fondo.jpg);
+.home-center{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-image: url(https://i.postimg.cc/Zngt9Tw1/fondo.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-
-    min-height: 100vh;
+    overflow: hidden;
 }
 
-.header-logo img{
-    margin-left: 15px;
-    width: 45px;
-    height: 45px;
-}
-
-header {
-    width: 100%;
-    position: absolute;
-    
-    padding: 5px 10px 10px 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    background-color: rgba(0, 0, 124, 0.801);
-    border-radius: 0 0 40px 40px;
-
-    z-index: 1;
-}
-
-.header-logo {
-    width: 50%;
-
-    display: flex;
-    justify-content: left;
-}
-
-.header-tittle {
-    padding-top: 5px;
-    padding-left: 15px;
-}
-
-.header-links a {
-    font-size: 18px;
-
-    margin-right: 60px;
-
-    color: rgb(181, 181, 181);
-
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.header-links i {
-    color: rgb(181, 181, 181);
-    padding-right: 5px;
-    
-    transition: color 0.3s ease;
-}
-
-.header-links a:hover {
-    color: var(--white-color);
-}
-
-.header-links a:hover i {
-    color: var(--white-color);
-}
-
-.section-begin {
-    position: absolute;
-    height: 80%;
-    width: 100%;
-
-    justify-content: center;
+.home-header{
     text-align: center;
+    border-radius: 20px;
+    margin: 20px;
+    margin-top: 3rem;
+    padding: 20px 100px 20px 100px;
+    background-color: #ffffff;
+    border: solid 1px #ffffff;
+    box-shadow: 5px 5px 25px #a2a2a2;
+    transition: all 0.8s ease;
+}.home-header:hover{
+    transform: scale(1.01);
+    box-shadow: 5px 5px 25px #ffffffde;
 }
 
-.section-begin h2 {
-    margin-top: 140px;
-}
-
-p {
-    margin-top: 15px;
-}
-
-footer {
-    position: absolute;
-    
-    bottom: 0;
-    left: 0;
-    right: 0;
-
+.home-content{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    height: 100%;
+}
 
-    padding-bottom: 10px;
-    
-    background-color: rgba(0, 0, 124, 0.801);
+.logo{
+    width: 120px;
+    height: 150px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;transition: all 0.3s ease;
+    margin-bottom: 2rem;
+}.logo:hover{
+    transform: scale(1.03);
+}
 
-    border-radius: 25px 25px 5px 5px;
+.site-tittle{
+    color: #008700;
+    text-decoration-line: underline;
+    font-size: 48px;
+    margin: 0;
+    padding: 0;
+}
+.site-sub{
+    color: #008700;
+    font-size: 20px;
+    padding: 0 0 1rem 0;
+}
+
+.home-actions{
+    margin-bottom: 1rem;
+    padding: 2px;
+    border-radius: 15px;
+}
+
+.home-actions a{
+    margin: 0 5px;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.site-btn{
+    background-color: #008700;
+    color: #ffffff;
+    transition: all 0.3s ease;
+    display: inline-block;
+}.site-btn:hover{
+    box-shadow: 1px 1px 10px #0087005f;
+    transform: scaleX(1.20);
+}
+
+.btn-logout{
+    background-color: #c30000;
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.3s;
+    margin-top: 2rem;
+}.btn-logout:hover{
+    box-shadow: 1px 1px 10px #8700005f;transform: scale(0.90);
+}
+
+.site-footer{
+    text-align: center;
+    margin-top: auto;
+    padding: 25px;
+    color: #ffffff;
+}
+
+@media (max-width: 600px) {
+    *{
+        box-sizing: border-box;
+    }
+    .home-header {
+        width: 80%;
+        margin-top: 1rem;
+        padding: 20px;
+    }
+
+    .logo {
+        width: 80px;
+        height: 100px;
+    }
+
+    .site-sub {
+        font-size: 18px;
+    }
+
+    .home-actions a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 0.50rem;
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    .site-footer {
+        font-size: 12px;
+        padding-bottom: 5%;
+    }
 }
