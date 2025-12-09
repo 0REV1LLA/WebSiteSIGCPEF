@@ -24,7 +24,7 @@ html, body {
     text-align: center;
     border-radius: 20px;
     margin: 20px;
-    margin-top: 3rem;
+    margin-top: 5rem;
     padding: 20px 100px 20px 100px;
     background-color: #ffffff;
     border: solid 1px #ffffff;
@@ -48,21 +48,13 @@ html, body {
     height: 150px;
     background-color: rgb(255, 255, 255);
     border-radius: 20px;transition: all 0.3s ease;
-    margin-bottom: 2rem;
 }.logo:hover{
     transform: scale(1.03);
 }
 
-.site-tittle{
-    color: #008700;
-    text-decoration-line: underline;
-    font-size: 48px;
-    margin: 0;
-    padding: 0;
-}
 .site-sub{
-    color: #008700;
-    font-size: 20px;
+    color: #000000;
+    font-size: 25px;
     padding: 0 0 1rem 0;
 }
 

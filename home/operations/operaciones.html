@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Operaciones — SIGCPEF</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styleHome.css">
+  <link rel="ico" href="https://i.postimg.cc/pdxN5cJ7/logotipo.png">
+</head>
+<body>
+  <header class="py-2">
+    <div class="container d-flex align-items-center justify-content-between">
+      <div class="d-flex align-items-center">
+        <img src="/img/logotipo.png" alt="logo" style="width:52px;height:52px;object-fit:contain">
+        <div class="ms-3">
+          <h4 class="mb-0">SIGCPEF</h4>
+          <small class="text-muted">Cuerpo Policial del Estado Falcón</small>
+        </div>
+      </div>
+      <nav>
+        <a class="me-3 text-decoration-none" href="/home/home.html"><i class='bx bxs-home'></i>INICIO</a>
+        <a class="me-3 text-decoration-none" href="/home/operations/operaciones.html"><i class='bx bxs-shield'></i>OPERACIONES</a>
+        <a class="me-3 text-decoration-none" href="/home/RR-HH/rrhh.html"><i class='bx bxs-user-account'></i>RR-HH</a>
+        <a class="me-3 text-decoration-none" href="/home/icap/icap.html"><i class='bx bxs-user-x'></i>ICAP</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container py-4">
+    <div class="card">
+      <div class="card-header d-flex justify-content-between align-items-center">
+        <h5 class="mb-0">Operaciones</h5>
+        <div class="input-group w-50">
+          <input id="operSearchPage" type="search" class="form-control form-control-sm" placeholder="Buscar por nombre, apellido o C.I.">
+          <button id="operSearchPageBtn" class="btn btn-sm btn-outline-secondary">Buscar</button>
+        </div>
+      </div>
+      <div class="card-body">
+        <p>Descripción general del Cuerpo Policial por divisiones y departamentos. Usa el buscador para localizar personal por nombre, apellido o número de cédula.</p>
+        <div id="operResultsPage" class="mt-3"></div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="py-3 bg-light mt-auto">
+    <div class="container text-center text-muted">© 2025 Derechos reservados - Comisario Yefir Rivero.</div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="scriptHome.js"></script>
+  <script src="operaciones.js"></script>
+</body>
+</html>
