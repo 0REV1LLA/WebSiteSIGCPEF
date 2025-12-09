@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redireccionando - SIGCPEF</title>
+    <link rel="icon" href="https://i.postimg.cc/pdxN5cJ7/logotipo.png">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #0b3271, #167723);
+            color: white;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+        .logo {
+            width: 100px;
+            height: 120px;
+            margin: 0 auto 20px;
+            display: block;
+        }
+        h1 {
+            margin: 0 0 10px;
+            font-size: 28px;
+        }
+        p {
+            margin: 0 0 20px;
+            font-size: 18px;
+            opacity: 0.9;
+        }
+        .loader {
+            width: 50px;
+            height: 50px;
+            border: 5px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top-color: white;
+            animation: spin 1s ease-in-out infinite;
+            margin: 20px auto;
+        }
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="img/logotipo.png" alt="Logo SIGCPEF" class="logo">
+        <h1>SIGCPEF</h1>
+        <p>Sistema de Integración para la Gestión del Cuerpo Policial del Estado Falcón</p>
+        <p>Redireccionando al sistema...</p>
+        <div class="loader"></div>
+    </div>
+    
+    <script>
+        // Redirect after 2 seconds
+        setTimeout(function() {
+            window.location.href = './login/login.html';
+        }, 2000);
+        
+        // Redirect immediately if user clicks
+        document.addEventListener('click', function() {
+            window.location.href = 'login/login.html';
+        });
+    </script>
+</body>
+</html>
