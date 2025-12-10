@@ -83,6 +83,17 @@
             </div>
         </div>
     </div>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const container = document.querySelector('.container');
+  const toggles = document.querySelectorAll('.change-form');
 
+  toggles.forEach(btn => {
+    btn.addEventListener('click', () => {
+      container.classList.toggle('active');
+    });
+  });
+});
+</script>
 </body>
 </html>

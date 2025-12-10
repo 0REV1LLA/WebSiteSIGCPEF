@@ -13,14 +13,18 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            background: linear-gradient(135deg, #0b3271, #167723);
-            color: white;
+            background: url(https://i.postimg.cc/Bn296fHw/fondo-Login.png);
+            background-size: cover;
+            background-position: center;
+            backdrop-filter: blur(5px);
+            color: rgb(0, 0, 0);
             text-align: center;
+            font-size: 18px;
         }
         .container {
             max-width: 600px;
             padding: 40px;
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.452);
             border-radius: 20px;
             backdrop-filter: blur(10px);
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
@@ -45,7 +49,7 @@
             height: 50px;
             border: 5px solid rgba(255, 255, 255, 0.3);
             border-radius: 50%;
-            border-top-color: white;
+            border-top-color: rgb(81, 255, 0);
             animation: spin 1s ease-in-out infinite;
             margin: 20px auto;
         }
@@ -69,7 +73,7 @@
         
         // Redirect immediately if user clicks
         document.addEventListener('click', function() {
-            window.location.href = 'login/login.html';
+            window.location.href = './login/login.html';
         });
     </script>
 </body>

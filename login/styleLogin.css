@@ -18,26 +18,6 @@
 
 body {
     height: 100vh;
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
-*  {
-    font-family: oswald, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-:root {
-    --white-color: #fff;
-    --text-color: #79787a;
-    --primary-color: #0056b3;
-    --primary-text-color: #888;
-    --hover-color: #eee;
-    --bg1-color: #0b3271;
-    --bg2-color: #167723;
-}
-
-body {
-    height: 100vh;
 
     display: flex;
     align-items: center;
